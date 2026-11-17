@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#f0fdf4" rx="12"/>
+  <circle cx="200" cy="130" r="60" fill="#bbf7d0"/>
+  <text x="200" y="145" font-size="50" text-anchor="middle">🐶</text>
+  <rect x="50" y="220" width="300" height="36" rx="18" fill="#15803d"/>
+  <text x="200" y="243" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Thor antes (feliz e saudável)</text>
+</svg>

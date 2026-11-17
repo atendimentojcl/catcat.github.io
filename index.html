@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuda para a Gatinha Phoebe (13 anos) - Campanha Solidária</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho / Barra de Navegação -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">🐱 Campanha da Phoebe</span>
+        <span class="brand-sub">Tratamento Neurológico & Ressonância</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#historia" class="nav-link">A História</a>
+        <a href="#galeria" class="nav-link">Fotos Reais</a>
+        <a href="#custos" class="nav-link">Orçamento</a>
+        <a href="#quem-doou" class="nav-link">Quem Já Doou</a>
+        <a href="#doar" class="btn-nav-donate">❤️ Doar Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <!-- ==============================================
+         1. SEÇÃO HERO (Destaque Principal)
+         ============================================== -->
+    <section class="hero-section">
+      <div class="urgency-pill">🚨 CASO NEUROLÓGICO URGENTE</div>
+      <h1 class="hero-title">Ajude a gatinha Phoebe (13 anos) a realizar a ressonância e vencer essa batalha</h1>
+      <p class="hero-subtitle">
+        Após crises convulsivas graves e suspeita de lesão cerebral, a Phoebe precisa com urgência de uma Ressonância Magnética (R$ 2.000) e cuidados intensivos para definir o tratamento que salvará sua vida.
+      </p>
+
+      <!-- Grade Principal do Hero: Foto de Destaque + Card de Arrecadação -->
+      <div class="hero-grid">
+        <!-- Foto Principal de Destaque -->
+        <div class="hero-image-card">
+          <img src="images/phoebe-home.jpg" alt="Foto da gatinha Phoebe de 13 anos em casa" class="hero-main-img" id="mainPetPhoto">
+          <div class="hero-img-caption">
+            <span>🐾 Phoebe, minha companheirinha amorosa há 13 anos</span>
+          </div>
+        </div>
+
+        <!-- Card de Meta e Ação Rápida -->
+        <div class="hero-action-card">
+          <div class="action-card-header">
+            <span class="action-badge">Meta Solidária</span>
+            <span class="action-donors">❤️ <strong>42 pessoas</strong> já ajudaram</span>
+          </div>
+
+          <div class="hero-values">
+            <div class="val-item">
+              <small>Arrecadado</small>
+              <strong class="raised-val" id="heroRaised">R$ 1.850,00</strong>
+            </div>
+            <div class="val-divider">/</div>
+            <div class="val-item">
+              <small>Meta Total</small>
+              <strong class="goal-val" id="heroGoal">R$ 4.500,00</strong>
+            </div>
+          </div>
+
+          <!-- Barra de Progresso Animada -->
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="heroProgressFill" style="width: 41%;"></div>
+          </div>
+          <div class="progress-meta-footer">
+            <span class="progress-percent" id="heroProgressPercent">41% alcançado</span>
+            <span class="progress-remaining">Faltam R$ 2.650,00</span>
+          </div>
+
+          <!-- Botões de Ação Imediata -->
+          <div class="hero-buttons">
+            <a href="#doar" class="btn-hero-donate">
+              <span class="btn-icon">❤️</span>
+              <span>Ajudar a Phoebe Agora (Pix ou Cartão)</span>
+            </a>
+            <button type="button" class="btn-hero-share" id="shareWhatsappBtn">
+              <span class="btn-icon">📲</span>
+              <span>Compartilhar no WhatsApp</span>
+            </button>
+          </div>
+
+          <div class="hero-guarantees">
+            <span>🔒 Doação Direta</span>
+            <span>•</span>
+            <span>🧠 Exame Neurológico</span>
+            <span>•</span>
+            <span>⚡ Pix Instantâneo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         2. SEÇÃO HISTÓRIA REAL (O Que Aconteceu)
+         ============================================== -->
+    <section id="historia" class="content-section">
+      <div class="section-badge">📖 O Que Aconteceu</div>
+      <h2 class="section-title">A história da Phoebe e por que precisamos da sua ajuda</h2>
+      
+      <div class="story-content">
+        <p class="story-lead">
+          "Oi, pessoal! Venho aqui pedir uma ajuda para minha gatinha Phoebe, de 13 anos. Ela é minha companheirinha de vida e estou fazendo absolutamente tudo o que posso para vê-la bem novamente."
+        </p>
+
+        <div class="timeline-box">
+          <div class="timeline-item">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-body">
+              <h3>O início: Quadro neurológico e primeira emergência</h3>
+              <p>Nesta semana, a Phoebe apresentou um quadro neurológico súbito inicialmente considerado um AVC (Acidente Vascular Cerebral), seguido de uma convulsão muito forte. Ela precisou ser internada às pressas na emergência veterinária para ser estabilizada.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-body">
+              <h3>A alta e a esperança de recuperação</h3>
+              <p>Depois de alguns dias internada sob cuidados médicos intensivos, ela recebeu alta. Estava se recuperando bem em casa, voltando a andar e recuperando aos poucos os movimentos das patinhas.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-body">
+              <h3>A recaída com nova convulsão</h3>
+              <p>Infelizmente, a Phoebe teve uma nova crise convulsiva grave e precisou ser internada novamente, recebendo oxigenoterapia e medicação anticonvulsivante venosa contínua.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-body">
+              <h3>A necessidade da Ressonância Magnética (R$ 2.000)</h3>
+              <p>Agora, o neurologista solicitou uma <strong>ressonância magnética do cérebro com urgência</strong>, pois existe a suspeita de uma lesão cerebral. Precisamos desse exame para investigar a causa real das convulsões e definir o tratamento adequado.</p>
+              <p style="margin-top: 8px;">Somente a ressonância custa <strong>R$ 2.000,00</strong>, além de todas as despesas com emergências, internações, consultas especializadas e medicamentos, que já somam milhares de reais. Por isso criei esta vaquinha: qualquer ajuda nos permite continuar lutando por ela!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         3. SEÇÃO GALERIA DE FOTOS REAIS
+         ============================================== -->
+    <section id="galeria" class="content-section">
+      <div class="section-badge">📸 Registros Reais da Phoebe</div>
+      <h2 class="section-title">Fotos da Phoebe e do atendimento na clínica</h2>
+      <p class="section-desc">Acompanhe a situação real da Phoebe durante o tratamento e internações.</p>
+
+      <div class="gallery-grid">
+        <!-- Foto 1: Phoebe em casa -->
+        <div class="gallery-card">
+          <img src="images/phoebe-home.jpg" alt="Phoebe deitada no cobertor em casa" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Phoebe em casa</h4>
+            <p>Minha companheirinha de 13 anos antes das crises, sempre dócil e carinhosa.</p>
+          </div>
+        </div>
+
+        <!-- Foto 2: Phoebe no atendimento veterinário -->
+        <div class="gallery-card">
+          <img src="images/phoebe-vet.jpg" alt="Phoebe sendo atendida e medicada na clínica veterinária" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Atendimento de emergência</h4>
+            <p>Recebendo medicação e cuidados da equipe veterinária durante a internação.</p>
+          </div>
+        </div>
+
+        <!-- Foto 3: Phoebe com oxigênio -->
+        <div class="gallery-card">
+          <img src="images/phoebe-oxygen.jpg" alt="Phoebe na internação com máscara de oxigênio" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Internada com oxigenoterapia</h4>
+            <p>Estabilização com suporte de oxigênio após a nova crise convulsiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         4. SEÇÃO CUSTOS E TRANSPARÊNCIA
+         ============================================== -->
+    <section id="custos" class="content-section">
+      <div class="section-badge">💰 Transparência nos Custos</div>
+      <h2 class="section-title">Detalhamento das despesas e do exame</h2>
+      <p class="section-desc">Veja exatamente onde o valor da meta será aplicado para viabilizar o diagnóstico e tratamento:</p>
+
+      <div class="costs-table-wrapper">
+        <table class="costs-table">
+          <thead>
+            <tr>
+              <th>Procedimento / Exame</th>
+              <th>Descrição</th>
+              <th class="text-right">Valor Estimado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ressonância Magnética do Cérebro</strong></td>
+              <td>Exame encefálico especializado para investigar lesão cerebral (Neurologia)</td>
+              <td class="text-right cost-value">R$ 2.000,00</td>
+            </tr>
+            <tr>
+              <td><strong>Internações de Emergência & Oxigênio</strong></td>
+              <td>Diárias hospitalares 24h, fluidoterapia e suporte respiratório</td>
+              <td class="text-right cost-value">R$ 1.200,00</td>
+            </tr>
+            <tr>
+              <td><strong>Consultas Neurológicas & Exames Laboratoriais</strong></td>
+              <td>Avaliação de especialista neurologista, hemograma e bioquímica de urgência</td>
+              <td class="text-right cost-value">R$ 800,00</td>
+            </tr>
+            <tr>
+              <td><strong>Medicamentos Anticonvulsivantes & Cuidados</strong></td>
+              <td>Drogas anticonvulsivantes contínuas, protetores gástricos e analgésicos</td>
+              <td class="text-right cost-value">R$ 500,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td colspan="2"><strong>Meta Total da Campanha</strong></td>
+              <td class="text-right total-cost-value">R$ 4.500,00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         5. SEÇÃO DE ATUALIZAÇÕES / BOLETIM MÉDICO
+         ============================================== -->
+    <section class="content-section">
+      <div class="section-badge">📢 Boletim Médico da Phoebe</div>
+      <h2 class="section-title">Status atual da internação</h2>
+
+      <div class="bulletin-card">
+        <div class="bulletin-header">
+          <span class="bulletin-status">🩺 Internada em Observação</span>
+          <span class="bulletin-date">Atualizado hoje</span>
+        </div>
+        <p class="bulletin-text">
+          "A Phoebe segue internada sob monitoramento da equipe veterinária, medicada com anticonvulsivantes para evitar novos episódios. O neurologista aguarda a confirmação do agendamento da ressonância magnética encefálica para determinar com precisão a causa da lesão e o protocolo de tratamento definitivo. Obrigado a todos que estão ajudando e compartilhando!"
+        </p>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         6. QUEM JÁ DOOU (COMENTÁRIOS E DOAÇÕES RECENTES)
+         ============================================== -->
+    <section id="quem-doou" class="content-section">
+      <div class="donations-header">
+        <h2 class="section-title">Quem Já Doou ❤️</h2>
+        <span class="donations-badge">42 doações confirmadas</span>
+      </div>
+      <p class="section-desc">Mensagens de carinho deixadas por quem já fez a doação para ajudar a Phoebe:</p>
+
+      <div class="donations-list">
+        
+        <!-- Doação 1 -->
+        <div class="donation-card">
+          <div class="donor-avatar">MC</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Mariana Costa</strong>
+              <span class="donation-value">Doou R$ 100,00</span>
+            </div>
+            <span class="donation-time">Há 25 minutos • via Pix</span>
+            <p class="donor-comment">"Força, Phoebe! 13 anos de muito amor e companheirismo. Que essa ressonância traga um diagnóstico claro e um tratamento que resolva. Estamos na torcida!"</p>
+          </div>
+        </div>
+
+        <!-- Doação 2 -->
+        <div class="donation-card">
+          <div class="donor-avatar">FA</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Felipe Alcantara</strong>
+              <span class="donation-value">Doou R$ 50,00</span>
+            </div>
+            <span class="donation-time">Há 45 minutos • via Pix</span>
+            <p class="donor-comment">"Fiz minha contribuição de coração. Como tutor de gatinhos idosos, sei como é difícil ver eles passarem por isso. Muita força para você e para a Phoebe!"</p>
+          </div>
+        </div>
+
+        <!-- Doação 3 -->
+        <div class="donation-card">
+          <div class="donor-avatar">CR</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Camila Rodrigues</strong>
+              <span class="donation-value">Doou R$ 30,00</span>
+            </div>
+            <span class="donation-time">Há 1 hora • via Pix</span>
+            <p class="donor-comment">"Doação feita pelo Pix! Compartilhei com amigos e grupos de proteção animal para batermos a meta da ressonância o quanto antes."</p>
+          </div>
+        </div>
+
+        <!-- Doação 4 -->
+        <div class="donation-card">
+          <div class="donor-avatar">DA</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Doador Anônimo</strong>
+              <span class="donation-value">Doou R$ 200,00</span>
+            </div>
+            <span class="donation-time">Há 2 horas • via Pix</span>
+            <p class="donor-comment">"Em oração para que as convulsões cessem e que a equipe de neurologia consiga ajudá-la a se recuperar com qualidade de vida."</p>
+          </div>
+        </div>
+
+        <!-- Doação 5 -->
+        <div class="donation-card">
+          <div class="donor-avatar">LF</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Lucas Ferreira</strong>
+              <span class="donation-value">Doou R$ 25,00</span>
+            </div>
+            <span class="donation-time">Há 3 horas • via Pix</span>
+            <p class="donor-comment">"Contribuição enviada com muito carinho. Logo a Phoebe estará de volta ao seu colinho ronronando feliz!"</p>
+          </div>
+        </div>
+
+        <!-- Doação 6 -->
+        <div class="donation-card">
+          <div class="donor-avatar">BL</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Beatriz Lima & Família</strong>
+              <span class="donation-value">Doou R$ 50,00</span>
+            </div>
+            <span class="donation-time">Há 4 horas • via Cartão</span>
+            <p class="donor-comment">"Me emocionei com a história da Phoebe. 13 anos é uma vida inteira de amizade. Estamos com vocês nessa luta!"</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================================
+         7. SEÇÃO DE DOAÇÃO / CHECKOUT (ÂNCORA #DOAR)
+         ============================================== -->
+    <section id="doar" class="checkout-section">
+      <div class="checkout-header-box">
+        <div class="urgency-pill">❤️ FAÇA SUA DOAÇÃO</div>
+        <h2 class="checkout-title">Contribua para o tratamento da Phoebe</h2>
+        <p class="checkout-subtitle">Escolha o valor e faça sua contribuição de forma rápida, segura e direta.</p>
+      </div>
+
+      <div class="checkout-wrapper">
+        <form id="donationForm" class="checkout-card" novalidate>
+          
+          <!-- Banner de Erro Geral -->
+          <div id="errorAlert" class="alert-box alert-error" style="display: none;">
+            <div class="alert-icon">⚠️</div>
+            <div class="alert-content">
+              <strong>Por favor, preencha os campos obrigatórios abaixo:</strong>
+              <ul id="errorList"></ul>
+            </div>
+          </div>
+
+          <!-- Passo 1: Dados do Doador -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <div>
+                <h3 class="step-title">Seus Dados</h3>
+                <p class="step-desc">Necessário para emissão do comprovante da doação.</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="fullName">Nome completo *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Ex: Maria da Silva" required autocomplete="name">
+                <span class="field-error" id="err-fullName"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="cpf">CPF *</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required inputmode="numeric">
+                <span class="field-error" id="err-cpf"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">WhatsApp / Telefone *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" maxlength="15" required inputmode="numeric">
+                <span class="field-error" id="err-phone"></span>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required autocomplete="email">
+                <span class="field-error" id="err-email"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Passo 2: Valor da Doação -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <div>
+                <h3 class="step-title">Valor da Contribuição</h3>
+                <p class="step-desc">Qualquer quantia ajuda a custear o exame da Phoebe.</p>
+              </div>
+            </div>
+
+            <div class="preset-amounts">
+              <button type="button" class="preset-btn" data-value="10">R$ 10</button>
+              <button type="button" class="preset-btn" data-value="25">R$ 25</button>
+              <button type="button" class="preset-btn active" data-value="50">R$ 50</button>
+              <button type="button" class="preset-btn" data-value="100">R$ 100</button>
+              <button type="button" class="preset-btn" data-value="200">R$ 200</button>
+            </div>
+
+            <div class="form-group full-width custom-amount-group">
+              <label for="customAmount">Ou digite outro valor (mínimo R$ 5,00) *</label>
+              <div class="input-currency-wrapper">
+                <span class="currency-prefix">R$</span>
+                <input type="text" id="customAmount" name="amount" placeholder="0,00" value="50,00" inputmode="numeric" required>
+              </div>
+              <span class="field-error" id="err-customAmount"></span>
+            </div>
+          </div>
+
+          <!-- Passo 3: Forma de Pagamento -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <div>
+                <h3 class="step-title">Forma de Pagamento</h3>
+                <p class="step-desc">Selecione como prefere transferir.</p>
+              </div>
+            </div>
+
+            <div class="payment-tabs">
+              <button type="button" class="payment-tab active" data-method="pix">
+                <span class="tab-icon">⚡</span>
+                <div class="tab-text">
+                  <strong>Pix Instantâneo</strong>
+                  <small>QR Code na hora • Sem taxas</small>
+                </div>
+              </button>
+              <button type="button" class="payment-tab" data-method="credit_card">
+                <span class="tab-icon">💳</span>
+                <div class="tab-text">
+                  <strong>Cartão de Crédito</strong>
+                  <small>Parcelamento disponível</small>
+                </div>
+              </button>
+            </div>
+
+            <!-- Campos do Cartão (aparecem se Cartão for selecionado) -->
+            <div id="creditCardFields" class="card-fields-box" style="display: none;">
+              <div class="form-grid">
+                <div class="form-group full-width">
+                  <label for="cardNumber">Número do Cartão</label>
+                  <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="cardExpiry">Validade</label>
+                  <input type="text" id="cardExpiry" placeholder="MM/AA" maxlength="5" inputmode="numeric">
+                </div>
+                <div class="form-group">
+                  <label for="cardCvv">CVV</label>
+                  <input type="text" id="cardCvv" placeholder="123" maxlength="4" inputmode="numeric">
+                </div>
+                <div class="form-group full-width">
+                  <label for="cardHolder">Nome no cartão</label>
+                  <input type="text" id="cardHolder" placeholder="Como está impresso no cartão">
+                </div>
+              </div>
+            </div>
+
+            <!-- Apoio Extra Solidário -->
+            <div class="boost-card">
+              <label class="boost-checkbox-label">
+                <input type="checkbox" id="boostCheckbox" name="boost" value="5.00">
+                <span class="checkbox-custom"></span>
+                <div class="boost-content">
+                  <div class="boost-title">
+                    <span>🐱 Apoio extra com medicamentos</span>
+                    <span class="boost-tag">+ R$ 5,00</span>
+                  </div>
+                  <p class="boost-sub">Ajuda a custear seringas, soro e protetor gástrico.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Resumo -->
+          <div class="summary-box">
+            <div class="summary-row">
+              <span>Valor da doação:</span>
+              <span id="summaryDonation">R$ 50,00</span>
+            </div>
+            <div class="summary-row" id="boostRow" style="display: none;">
+              <span>Apoio extra medicamentos:</span>
+              <span id="summaryBoost">R$ 5,00</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-row summary-total">
+              <span>Total a transferir:</span>
+              <span id="summaryTotal">R$ 50,00</span>
+            </div>
+          </div>
+
+          <!-- Termos -->
+          <div class="terms-group">
+            <label class="terms-label">
+              <input type="checkbox" id="termsCheck" checked>
+              <span>Desejo receber atualizações e comprovantes dos exames da Phoebe pelo WhatsApp e E-mail.</span>
+            </label>
+          </div>
+
+          <!-- Botão Principal -->
+          <button type="submit" id="submitBtn" class="btn-primary">
+            <span class="btn-icon">❤️</span>
+            <span class="btn-text" id="btnText">Doar R$ 50,00 com Pix</span>
+          </button>
+
+          <!-- Selos de Segurança -->
+          <div class="security-footer">
+            <div class="security-badge">
+              <span class="badge-icon">🔒</span>
+              <span>Ambiente Criptografado</span>
+            </div>
+            <div class="security-badge">
+              <span class="badge-icon">🩺</span>
+              <span>Repasse Direto para a Phoebe</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL PIX -->
+  <div id="pixModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Fechar">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-icon">⚡</div>
+        <h3 class="modal-title">Pague com Pix</h3>
+        <p class="modal-sub">Abra o app do seu banco e aponte a câmera ou use o Copia e Cola.</p>
+      </div>
+
+      <div class="modal-amount-box">
+        <span>Valor da doação para a Phoebe:</span>
+        <strong id="modalTotalAmount">R$ 50,00</strong>
+      </div>
+
+      <!-- Canvas do QR Code -->
+      <div class="qrcode-wrapper">
+        <canvas id="qrCodeCanvas"></canvas>
+        <div class="qr-status">
+          <span class="status-dot"></span>
+          <span>Aguardando confirmação do pagamento...</span>
+        </div>
+      </div>
+
+      <!-- Copia e Cola -->
+      <div class="copia-cola-group">
+        <label for="pixPayload">Código Pix Copia e Cola:</label>
+        <div class="copia-cola-row">
+          <input type="text" id="pixPayload" readonly value="">
+          <button type="button" id="copyPixBtn" class="btn-copy">
+            <span id="copyText">Copiar</span>
+          </button>
+        </div>
+        <span id="copySuccessMsg" class="copy-success" style="display: none;">Código copiado com sucesso!</span>
+      </div>
+
+      <div class="modal-instructions">
+        <ol>
+          <li>Abra o aplicativo do seu banco (Nubank, Itaú, Inter, Bradesco, etc.).</li>
+          <li>Acesse a área <strong>Pix &gt; Pagar com QR Code</strong> ou <strong>Pix Copia e Cola</strong>.</li>
+          <li>Confirme o valor e conclua a doação.</li>
+        </ol>
+      </div>
+
+      <button type="button" id="iPaidBtn" class="btn-secondary">Já realizei o pagamento</button>
+    </div>
+  </div>
+
+  <!-- BARRA FLUTUANTE INFERIOR (MOBILE STICKY BAR) -->
+  <aside class="sticky-mobile-bar" id="stickyBar">
+    <div class="sticky-bar-info">
+      <span class="sticky-pet">🐱 Ajude a Phoebe</span>
+      <span class="sticky-raised">R$ 1.850 de R$ 4.500</span>
+    </div>
+    <a href="#doar" class="btn-sticky-donate">Doar Agora</a>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="qrcode.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Compartilhamento no WhatsApp com a história real da Phoebe
+    document.getElementById('shareWhatsappBtn')?.addEventListener('click', () => {
+      const shareText = encodeURIComponent(
+        "🚨 Pessoal, preciso muito da ajuda de vocês! Minha gatinha Phoebe, de 13 anos, teve crises convulsivas graves e o neurologista solicitou uma Ressonância Magnética urgente (R$ 2.000) por suspeita de lesão cerebral. Criei uma vaquinha para custear o exame e o tratamento. Qualquer valor ajuda demais! Veja a história e contribua aqui: " + window.location.href
+      );
+      window.open(`https://api.whatsapp.com/send?text=${shareText}`, '_blank');
+    });
+  </script>
+</body>
+</html>
