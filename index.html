@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajuda para a Gatinha Phoebe (13 anos) - Campanha Solidária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-hover: #047857;
+      --primary-light: #ecfdf5;
+      --primary-border: #a7f3d0;
+      --danger: #dc2626;
+      --danger-light: #fef2f2;
+      --danger-border: #fecaca;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-sub: #475569;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-focus: #059669;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.12);
+      --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 70px;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand-badge {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: #0f172a;
+      display: block;
+    }
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-link {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-link:hover { color: var(--primary); }
+    .btn-nav-donate {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-nav-donate:hover { background: var(--primary-hover); }
+
+    /* Container Principal */
+    .page-container {
+      max-width: 860px;
+      margin: 28px auto;
+      padding: 0 16px;
+    }
+
+    /* Hero */
+    .hero-section {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .urgency-pill {
+      display: inline-block;
+      background: #fee2e2;
+      color: #b91c1c;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-sub);
+      max-width: 660px;
+      margin: 0 auto 28px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 24px;
+      text-align: left;
+    }
+    .hero-image-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-main-img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      object-position: center 25%;
+      display: block;
+    }
+    .hero-img-caption {
+      padding: 10px 14px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: #f8fafc;
+      border-top: 1px solid var(--border-color);
+    }
+    .hero-action-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .action-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .action-badge {
+      background: var(--primary-light);
+      color: var(--primary-hover);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .action-donors {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .hero-values {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .val-item small {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .raised-val {
+      font-size: 1.5rem;
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .goal-val {
+      font-size: 1.25rem;
+      color: #334155;
+      font-weight: 700;
+    }
+    .val-divider {
+      font-size: 1.3rem;
+      color: #cbd5e1;
+    }
+    .progress-bar-bg {
+      width: 100%;
+      height: 12px;
+      background-color: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+      border-radius: 999px;
+      transition: width 0.6s ease;
+    }
+    .progress-meta-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .progress-percent {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .btn-hero-donate {
+      background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+      transition: transform 0.15s, filter 0.15s;
+    }
+    .btn-hero-donate:hover {
+      filter: brightness(1.05);
+      transform: translateY(-1px);
+    }
+    .btn-hero-share {
+      background: #ffffff;
+      color: #15803d;
+      border: 1px solid #86efac;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 12px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-hero-share:hover { background: #f0fdf4; }
+    .hero-guarantees {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-top: 1px solid #f1f5f9;
+      padding-top: 12px;
+    }
+
+    /* Seções de Conteúdo */
+    .content-section {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-sm);
+    }
+    .section-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    /* História */
+    .story-lead {
+      font-size: 1.05rem;
+      color: #334155;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .timeline-box {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-left: 10px;
+    }
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .timeline-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .timeline-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .timeline-body p {
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      line-height: 1.6;
+    }
+
+    /* Galeria */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .gallery-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-info {
+      padding: 12px;
+    }
+    .gallery-info h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .gallery-info p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Tabela de Custos */
+    .costs-table-wrapper { overflow-x: auto; }
+    .costs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .costs-table th {
+      background: #f8fafc;
+      color: var(--text-sub);
+      font-weight: 700;
+      text-align: left;
+      padding: 12px;
+      border-bottom: 2px solid var(--border-color);
+    }
+    .costs-table td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border-color);
+      color: #334155;
+    }
+    .text-right { text-align: right; }
+    .cost-value { font-weight: 600; color: #0f172a; }
+    .total-row td {
+      background: #f0fdf4;
+      border-top: 2px solid var(--primary-border);
+      font-size: 1rem;
+    }
+    .total-cost-value {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    /* Quem Já Doou */
+    .donations-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .donations-badge {
+      background: var(--primary-light);
+      color: var(--primary-hover);
+      border: 1px solid var(--primary-border);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+    .donations-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .donation-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+    .donor-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    .donor-details { flex: 1; }
+    .donor-top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .donor-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .donation-value {
+      font-weight: 800;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+    .donation-time {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .donor-comment {
+      font-size: 0.9rem;
+      color: #334155;
+      line-height: 1.5;
+      background: #f8fafc;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--primary);
+      margin-top: 4px;
+    }
+
+    /* Checkout & Formulário */
+    .checkout-section { margin-top: 40px; }
+    .checkout-header-box {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .checkout-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .checkout-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    .checkout-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+    }
+    .form-step {
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .step-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .step-number {
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .full-width { grid-column: 1 / -1; }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+    .form-group input {
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 10px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: all 0.2s;
+    }
+    .form-group input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+    }
+    .form-group input.input-error {
+      border-color: var(--danger);
+      background-color: var(--danger-light);
+    }
+    .field-error {
+      color: var(--danger);
+      font-size: 0.75rem;
+      margin-top: 4px;
+      display: none;
+    }
+    .field-error.active { display: block; }
+
+    /* Valores Pré-definidos */
+    .preset-amounts {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .preset-btn {
+      background: #f1f5f9;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 10px 4px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .preset-btn.active {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-hover);
+      box-shadow: 0 0 0 2px var(--primary-border);
+    }
+    .input-currency-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .currency-prefix {
+      position: absolute;
+      left: 14px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+    .input-currency-wrapper input {
+      padding-left: 45px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    /* Caixa Exclusiva Pix */
+    .pix-selected-box {
+      background: var(--primary-light);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      margin-bottom: 16px;
+    }
+    .pix-box-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .pix-tag {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .pix-instant {
+      font-size: 0.8rem;
+      color: var(--primary-hover);
+      font-weight: 700;
+    }
+    .pix-box-desc {
+      font-size: 0.85rem;
+      color: #065f46;
+      line-height: 1.5;
+    }
+
+    /* Apoio Extra (Boost) */
+    .boost-card {
+      background: #f0fdf4;
+      border: 1px dashed var(--primary-border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+    }
+    .boost-checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      cursor: pointer;
+    }
+    .boost-checkbox-label input {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--primary);
+      margin-top: 2px;
+    }
+    .boost-content { flex: 1; }
+    .boost-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #065f46;
+    }
+    .boost-tag {
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .boost-sub {
+      font-size: 0.8rem;
+      color: #047857;
+      margin-top: 2px;
+    }
+
+    /* Resumo */
+    .summary-box {
+      background: #f8fafc;
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: var(--text-sub);
+      margin-bottom: 8px;
+    }
+    .summary-divider {
+      height: 1px;
+      background-color: var(--border-color);
+      margin: 10px 0;
+    }
+    .summary-total {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 0;
+    }
+    .summary-total span:last-child { color: var(--primary); }
+
+    /* Botão Principal */
+    .btn-primary {
+      width: 100%;
+      background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 16px 20px;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+      transition: all 0.15s;
+    }
+    .btn-primary:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .security-footer {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .security-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Modal Pix */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 16px;
+    }
+    .modal-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 480px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 28px;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 1.8rem;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+    .modal-amount-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+    .modal-amount-box strong {
+      font-size: 1.3rem;
+      color: var(--primary);
+      display: block;
+    }
+    .qrcode-wrapper {
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #modalQrCodeImg {
+      max-width: 210px;
+      max-height: 210px;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .qr-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #10b981;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .copia-cola-group {
+      text-align: left;
+      margin: 16px 0;
+    }
+    .copia-cola-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-sub);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .copia-cola-row { display: flex; gap: 8px; }
+    .copia-cola-row input {
+      flex: 1;
+      font-family: monospace;
+      font-size: 0.8rem;
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: #f1f5f9;
+      color: #334155;
+      outline: none;
+    }
+    .btn-copy {
+      background: var(--primary);
+      color: #ffffff;
+      border: none;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0 16px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+    .copy-success {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 6px;
+    }
+    .modal-instructions {
+      background: #f8fafc;
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .modal-instructions ol { margin-left: 18px; }
+    .btn-secondary {
+      width: 100%;
+      background: #f1f5f9;
+      color: #334155;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+    }
+
+    /* Mobile Sticky Bar */
+    .sticky-mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      padding: 10px 16px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+      z-index: 99;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sticky-pet { font-weight: 700; font-size: 0.85rem; color: #0f172a; }
+    .sticky-raised { font-size: 0.75rem; color: var(--primary); font-weight: 600; }
+    .btn-sticky-donate {
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 20px;
+      border-radius: 999px;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 1.6rem; }
+      .nav-links .nav-link { display: none; }
+      .sticky-mobile-bar { display: flex; }
+    }
+    @media (max-width: 520px) {
+      .checkout-card { padding: 16px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .preset-amounts { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">🐱 Campanha da Phoebe</span>
+        <span class="brand-sub">Tratamento Neurológico & Ressonância</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#historia" class="nav-link">A História</a>
+        <a href="#galeria" class="nav-link">Fotos</a>
+        <a href="#custos" class="nav-link">Orçamento</a>
+        <a href="#quem-doou" class="nav-link">Quem Já Doou</a>
+        <a href="#doar" class="btn-nav-donate">❤️ Doar com Pix</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section">
+      <div class="urgency-pill">🚨 CASO NEUROLÓGICO URGENTE</div>
+      <h1 class="hero-title">Ajude a gatinha Phoebe (13 anos) a realizar a ressonância e vencer essa batalha</h1>
+      <p class="hero-subtitle">
+        Após crises convulsivas graves e suspeita de lesão cerebral, a Phoebe precisa com urgência de uma Ressonância Magnética (R$ 2.000) e cuidados intensivos para definir o tratamento que salvará sua vida.
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-image-card">
+          <img src="images/phoebe-home.jpg" alt="Phoebe no cobertor em casa" class="hero-main-img">
+          <div class="hero-img-caption">
+            <span>🐾 Phoebe, minha companheirinha amorosa há 13 anos</span>
+          </div>
+        </div>
+
+        <div class="hero-action-card">
+          <div class="action-card-header">
+            <span class="action-badge">Meta Solidária</span>
+            <span class="action-donors">❤️ <strong>42 pessoas</strong> já ajudaram</span>
+          </div>
+
+          <div class="hero-values">
+            <div class="val-item">
+              <small>Arrecadado</small>
+              <strong class="raised-val">R$ 1.850,00</strong>
+            </div>
+            <div class="val-divider">/</div>
+            <div class="val-item">
+              <small>Meta Total</small>
+              <strong class="goal-val">R$ 4.500,00</strong>
+            </div>
+          </div>
+
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 41%;"></div>
+          </div>
+          <div class="progress-meta-footer">
+            <span class="progress-percent">41% alcançado</span>
+            <span>Faltam R$ 2.650,00</span>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#doar" class="btn-hero-donate">
+              <span>❤️</span>
+              <span>Ajudar a Phoebe Agora com Pix</span>
+            </a>
+            <button type="button" class="btn-hero-share" id="shareWhatsappBtn">
+              <span>📲</span>
+              <span>Compartilhar no WhatsApp</span>
+            </button>
+          </div>
+
+          <div class="hero-guarantees">
+            <span>🔒 Doação Direta</span>
+            <span>•</span>
+            <span>🧠 Exame Neurológico</span>
+            <span>•</span>
+            <span>⚡ Pix Instantâneo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. A HISTÓRIA REAL -->
+    <section id="historia" class="content-section">
+      <div class="section-badge">📖 O Que Aconteceu</div>
+      <h2 class="section-title">A história da Phoebe e por que precisamos da sua ajuda</h2>
+      
+      <div class="story-content">
+        <p class="story-lead">
+          "Oi, pessoal! Venho aqui pedir uma ajuda para minha gatinha Phoebe, de 13 anos. Ela é minha companheirinha de vida e estou fazendo absolutamente tudo o que posso para vê-la bem novamente."
+        </p>
+
+        <div class="timeline-box">
+          <div class="timeline-item">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-body">
+              <h3>O início: Quadro neurológico e primeira emergência</h3>
+              <p>Nesta semana, a Phoebe apresentou um quadro neurológico súbito inicialmente considerado um AVC (Acidente Vascular Cerebral), seguido de uma convulsão muito forte. Ela precisou ser internada às pressas na emergência veterinária para ser estabilizada.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-body">
+              <h3>A alta e a esperança de recuperação</h3>
+              <p>Depois de alguns dias internada sob cuidados médicos intensivos, ela recebeu alta. Estava se recuperando bem em casa, voltando a andar e recuperando aos poucos os movimentos das patinhas.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-body">
+              <h3>A recaída com nova convulsão</h3>
+              <p>Infelizmente, a Phoebe teve uma nova crise convulsiva grave e precisou ser internada novamente, recebendo oxigenoterapia e medicação anticonvulsivante venosa contínua.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-body">
+              <h3>A necessidade da Ressonância Magnética (R$ 2.000)</h3>
+              <p>Agora, o neurologista solicitou uma <strong>ressonância magnética do cérebro com urgência</strong>, pois existe a suspeita de uma lesão cerebral. Precisamos desse exame para investigar a causa real das convulsões e definir o tratamento adequado.</p>
+              <p style="margin-top: 8px;">Somente a ressonância custa <strong>R$ 2.000,00</strong>, além de todas as despesas com emergências, internações, consultas especializadas e medicamentos, que já somam milhares de reais. Por isso criei esta vaquinha: qualquer ajuda nos permite continuar lutando por ela!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GALERIA DE FOTOS -->
+    <section id="galeria" class="content-section">
+      <div class="section-badge">📸 Registros Reais da Phoebe</div>
+      <h2 class="section-title">Fotos da Phoebe e do atendimento na clínica</h2>
+      <p class="section-desc">Acompanhe a situação real da Phoebe durante o tratamento e internações.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="images/phoebe-home.jpg" alt="Phoebe em casa" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Phoebe em casa</h4>
+            <p>Minha companheirinha de 13 anos antes das crises, sempre dócil e carinhosa.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/phoebe-vet.jpg" alt="Atendimento veterinário" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Atendimento de emergência</h4>
+            <p>Recebendo medicação e cuidados da equipe veterinária durante a internação.</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="images/phoebe-oxygen.jpg" alt="Phoebe com oxigênio" class="gallery-img">
+          <div class="gallery-info">
+            <h4>Internada com oxigenoterapia</h4>
+            <p>Estabilização com suporte de oxigênio após a nova crise convulsiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CUSTOS E TRANSPARÊNCIA -->
+    <section id="custos" class="content-section">
+      <div class="section-badge">💰 Transparência nos Custos</div>
+      <h2 class="section-title">Detalhamento das despesas e do exame</h2>
+      <p class="section-desc">Veja exatamente onde o valor da meta será aplicado para viabilizar o diagnóstico e tratamento:</p>
+
+      <div class="costs-table-wrapper">
+        <table class="costs-table">
+          <thead>
+            <tr>
+              <th>Procedimento / Exame</th>
+              <th>Descrição</th>
+              <th class="text-right">Valor Estimado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ressonância Magnética do Cérebro</strong></td>
+              <td>Exame encefálico especializado para investigar lesão cerebral (Neurologia)</td>
+              <td class="text-right cost-value">R$ 2.000,00</td>
+            </tr>
+            <tr>
+              <td><strong>Internações de Emergência & Oxigênio</strong></td>
+              <td>Diárias hospitalares 24h, fluidoterapia e suporte respiratório</td>
+              <td class="text-right cost-value">R$ 1.200,00</td>
+            </tr>
+            <tr>
+              <td><strong>Consultas Neurológicas & Exames Laboratoriais</strong></td>
+              <td>Avaliação de especialista neurologista, hemograma e bioquímica de urgência</td>
+              <td class="text-right cost-value">R$ 800,00</td>
+            </tr>
+            <tr>
+              <td><strong>Medicamentos Anticonvulsivantes & Cuidados</strong></td>
+              <td>Drogas anticonvulsivantes contínuas, protetores gástricos e analgésicos</td>
+              <td class="text-right cost-value">R$ 500,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="total-row">
+              <td colspan="2"><strong>Meta Total da Campanha</strong></td>
+              <td class="text-right total-cost-value">R$ 4.500,00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. QUEM JÁ DOOU -->
+    <section id="quem-doou" class="content-section">
+      <div class="donations-header">
+        <h2 class="section-title">Quem Já Doou ❤️</h2>
+        <span class="donations-badge">42 doações confirmadas</span>
+      </div>
+      <p class="section-desc">Mensagens de carinho deixadas por quem já fez a doação para ajudar a Phoebe:</p>
+
+      <div class="donations-list">
+        <div class="donation-card">
+          <div class="donor-avatar">MC</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Mariana Costa</strong>
+              <span class="donation-value">Doou R$ 100,00</span>
+            </div>
+            <span class="donation-time">Há 25 minutos • via Pix</span>
+            <p class="donor-comment">"Força, Phoebe! 13 anos de muito amor e companheirismo. Que essa ressonância traga um diagnóstico claro e um tratamento que resolva. Estamos na torcida!"</p>
+          </div>
+        </div>
+
+        <div class="donation-card">
+          <div class="donor-avatar">FA</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Felipe Alcantara</strong>
+              <span class="donation-value">Doou R$ 50,00</span>
+            </div>
+            <span class="donation-time">Há 45 minutos • via Pix</span>
+            <p class="donor-comment">"Fiz minha contribuição de coração. Como tutor de gatinhos idosos, sei como é difícil ver eles passarem por isso. Muita força para você e para a Phoebe!"</p>
+          </div>
+        </div>
+
+        <div class="donation-card">
+          <div class="donor-avatar">CR</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Camila Rodrigues</strong>
+              <span class="donation-value">Doou R$ 30,00</span>
+            </div>
+            <span class="donation-time">Há 1 hora • via Pix</span>
+            <p class="donor-comment">"Doação feita pelo Pix! Compartilhei com amigos e grupos de proteção animal para batermos a meta da ressonância o quanto antes."</p>
+          </div>
+        </div>
+
+        <div class="donation-card">
+          <div class="donor-avatar">DA</div>
+          <div class="donor-details">
+            <div class="donor-top-info">
+              <strong class="donor-name">Doador Anônimo</strong>
+              <span class="donation-value">Doou R$ 200,00</span>
+            </div>
+            <span class="donation-time">Há 2 horas • via Pix</span>
+            <p class="donor-comment">"Em oração para que as convulsões cessem e que a equipe de neurologia consiga ajudá-la a se recuperar com qualidade de vida."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CHECKOUT EXCLUSIVO PIX (#DOAR) -->
+    <section id="doar" class="checkout-section">
+      <div class="checkout-header-box">
+        <div class="urgency-pill">❤️ FAÇA SUA DOAÇÃO</div>
+        <h2 class="checkout-title">Contribua para o tratamento da Phoebe</h2>
+        <p class="checkout-subtitle">Escolha o valor e faça sua contribuição de forma rápida, segura e direta via Pix.</p>
+      </div>
+
+      <div class="checkout-wrapper">
+        <form id="donationForm" class="checkout-card" novalidate>
+
+          <!-- Passo 1: Dados do Doador -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">1</span>
+              <div>
+                <h3 class="step-title">Seus Dados</h3>
+                <p class="step-desc">Necessário para gerar a chave Pix oficial no seu nome.</p>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="fullName">Nome completo *</label>
+                <input type="text" id="fullName" placeholder="Ex: Maria da Silva" required>
+                <span class="field-error" id="err-fullName">Informe seu nome completo</span>
+              </div>
+
+              <div class="form-group">
+                <label for="cpf">CPF *</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                <span class="field-error" id="err-cpf">CPF inválido</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">WhatsApp / Telefone *</label>
+                <input type="tel" id="phone" placeholder="(00) 00000-0000" maxlength="15" required>
+                <span class="field-error" id="err-phone">WhatsApp obrigatório</span>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                <span class="field-error" id="err-email">E-mail inválido</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Passo 2: Valor da Doação -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">2</span>
+              <div>
+                <h3 class="step-title">Valor da Contribuição</h3>
+                <p class="step-desc">Qualquer quantia ajuda a custear o exame da Phoebe.</p>
+              </div>
+            </div>
+
+            <div class="preset-amounts">
+              <button type="button" class="preset-btn" data-value="10">R$ 10</button>
+              <button type="button" class="preset-btn" data-value="25">R$ 25</button>
+              <button type="button" class="preset-btn active" data-value="50">R$ 50</button>
+              <button type="button" class="preset-btn" data-value="100">R$ 100</button>
+              <button type="button" class="preset-btn" data-value="200">R$ 200</button>
+            </div>
+
+            <div class="form-group full-width custom-amount-group">
+              <label for="customAmount">Ou digite outro valor (mínimo R$ 5,00) *</label>
+              <div class="input-currency-wrapper">
+                <span class="currency-prefix">R$</span>
+                <input type="text" id="customAmount" value="50,00" required>
+              </div>
+              <span class="field-error" id="err-customAmount">Mínimo de R$ 5,00</span>
+            </div>
+          </div>
+
+          <!-- Passo 3: Forma de Pagamento (EXCLUSIVO PIX) -->
+          <div class="form-step">
+            <div class="step-header">
+              <span class="step-number">3</span>
+              <div>
+                <h3 class="step-title">Forma de Pagamento: Pix</h3>
+                <p class="step-desc">Pagamento instantâneo processado por Pix.</p>
+              </div>
+            </div>
+
+            <div class="pix-selected-box">
+              <div class="pix-box-header">
+                <span class="pix-tag">⚡ PIX INSTANTÂNEO</span>
+                <span class="pix-instant">Compensação imediata</span>
+              </div>
+              <p class="pix-box-desc">
+                Ao clicar no botão verde abaixo, o sistema gera o <strong>QR Code oficial</strong> e o código <strong>Pix Copia e Cola</strong> para você pagar no aplicativo do seu banco (Nubank, Itaú, Bradesco, Inter, Mercado Pago, etc.).
+              </p>
+            </div>
+
+            <!-- Apoio Extra Solidário -->
+            <div class="boost-card">
+              <label class="boost-checkbox-label">
+                <input type="checkbox" id="boostCheckbox" value="5.00">
+                <div class="boost-content">
+                  <div class="boost-title">
+                    <span>🐱 Apoio extra com medicamentos</span>
+                    <span class="boost-tag">+ R$ 5,00</span>
+                  </div>
+                  <p class="boost-sub">Ajuda a custear seringas, soro e protetor gástrico.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Resumo -->
+          <div class="summary-box">
+            <div class="summary-row">
+              <span>Valor da doação:</span>
+              <span id="summaryDonation">R$ 50,00</span>
+            </div>
+            <div class="summary-row" id="boostRow" style="display: none;">
+              <span>Apoio extra medicamentos:</span>
+              <span>R$ 5,00</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-row summary-total">
+              <span>Total a transferir:</span>
+              <span id="summaryTotal">R$ 50,00</span>
+            </div>
+          </div>
+
+          <!-- Botão Principal -->
+          <button type="submit" id="submitBtn" class="btn-primary">
+            <span>❤️</span>
+            <span id="btnText">Doar R$ 50,00 com Pix</span>
+          </button>
+
+          <div class="security-footer">
+            <div class="security-badge">
+              <span>🔒</span>
+              <span>Ambiente 100% Criptografado</span>
+            </div>
+            <div class="security-badge">
+              <span>🩺</span>
+              <span>Repasse Direto para a Phoebe</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL PIX -->
+  <div id="pixModal" class="modal-overlay" style="display: none;">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="closeModalBtn">&times;</button>
+      
+      <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin-top: 10px;">⚡ Pague com Pix</h3>
+      <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">Abra o app do seu banco e aponte a câmera ou copie o código.</p>
+
+      <div class="modal-amount-box">
+        <span>Valor da doação para a Phoebe:</span>
+        <strong id="modalTotalAmount">R$ 50,00</strong>
+      </div>
+
+      <div class="qrcode-wrapper">
+        <img id="modalQrCodeImg" src="" alt="QR Code Pix" style="max-width: 210px; max-height: 210px; border-radius: 8px; border: 1px solid #e2e8f0; display: block; margin: 0 auto 10px;">
+        <div class="qr-status">
+          <span class="status-dot"></span>
+          <span>Aguardando confirmação do pagamento...</span>
+        </div>
+      </div>
+
+      <div class="copia-cola-group">
+        <label for="pixPayload">Código Pix Copia e Cola:</label>
+        <div class="copia-cola-row">
+          <input type="text" id="pixPayload" readonly value="">
+          <button type="button" id="copyPixBtn" class="btn-copy">
+            <span id="copyText">Copiar</span>
+          </button>
+        </div>
+        <span id="copySuccessMsg" class="copy-success" style="display: none;">Código copiado com sucesso!</span>
+      </div>
+
+      <div class="modal-instructions">
+        <ol>
+          <li>Abra o aplicativo do seu banco (Nubank, Itaú, Inter, etc.).</li>
+          <li>Acesse a área <strong>Pix &gt; Pagar com QR Code</strong> ou <strong>Pix Copia e Cola</strong>.</li>
+          <li>Cole o código e conclua o pagamento.</li>
+        </ol>
+      </div>
+
+      <button type="button" id="iPaidBtn" class="btn-secondary">Já realizei o pagamento</button>
+    </div>
+  </div>
+
+  <aside class="sticky-mobile-bar">
+    <div>
+      <span class="sticky-pet">🐱 Ajude a Phoebe</span><br>
+      <span class="sticky-raised">R$ 1.850 de R$ 4.500</span>
+    </div>
+    <a href="#doar" class="btn-sticky-donate">Doar com Pix</a>
+  </aside>
+
+  <!-- ==============================================================
+       SCRIPTS PUROS EM HTML / JAVASCRIPT (SEM VERCEL, SEM SERVIDOR)
+       ============================================================== -->
+  <script>
+    // ==============================================================
+    // ⚙️ INTEGRAÇÃO MISTICPAY OFICIAL (CHAVES REAIS CONFIGURADAS)
+    // ==============================================================
+    /**
+     * Esta função é executada quando o doador clica em "Doar com Pix".
+     * Chama diretamente a API da MisticPay para gerar cobrança Pix instantânea.
+     */
+    async function chamarGatewayPix(dadosDoador) {
+      console.log("[MisticPay] Iniciando geração do Pix:", dadosDoador);
+
+      const MISTICPAY_URL = "https://api.misticpay.com/api/transactions/create";
+      const AUTH_HEADER = "Basic cGtfMDBkYmNjNzYwZmIwNjc0YTU0MzM2ZmY3NDVhNjVhMzM6c2tfZjJlMGUyMWJlMjZiZjIwMDg1NDBkMDkyMWZhNzlhMzBkNDBjZWJmNTIzNmVjNzhlMjQ3NDcyY2E0YmEyYjE1OQ==";
+
+      // Monta o payload conforme exigido pela documentação oficial da MisticPay
+      const payload = {
+        amount: Number(dadosDoador.valor.toFixed(2)),
+        payerName: dadosDoador.nome || "Doador Phoebe",
+        payerDocument: (dadosDoador.cpf || "").replace(/\D/g, ""),
+        description: dadosDoador.descricao || "Doacao para tratamento da gatinha Phoebe",
+        transactionId: "PHOEBE_" + Date.now() + "_" + Math.floor(Math.random() * 1000)
+      };
+
+      console.log("[MisticPay] Enviando payload:", payload);
+
+      const response = await fetch(MISTICPAY_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": AUTH_HEADER
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("[MisticPay] Falha na requisição:", response.status, errorText);
+        throw new Error(`Erro MisticPay (${response.status}): ${errorText}`);
+      }
+
+      const res = await response.json();
+      console.log("[MisticPay] Sucesso! Dados da transação:", res);
+
+      const data = res.data || res;
+      const copiaECola = data.copyPaste || data.copiaECola || data.pixCode || data.qrCode;
+      
+      let qrCodeImgUrl = data.qrCodeBase64;
+      if (qrCodeImgUrl && !qrCodeImgUrl.startsWith("data:") && !qrCodeImgUrl.startsWith("http")) {
+        qrCodeImgUrl = "data:image/png;base64," + qrCodeImgUrl;
+      }
+      if (!qrCodeImgUrl && data.qrcodeUrl) {
+        qrCodeImgUrl = data.qrcodeUrl;
+      }
+      if (!qrCodeImgUrl && copiaECola) {
+        qrCodeImgUrl = "https://api.qrserver.com/v1/create-qr-code/?size=250x250&margin=10&data=" + encodeURIComponent(copiaECola);
+      }
+
+      return {
+        copiaECola: copiaECola,
+        qrCodeImgUrl: qrCodeImgUrl
+      };
+    }
+
+    // ==============================================================
+    // LÓGICA DO FORMULÁRIO E MODAL
+    // ==============================================================
+    let currentDonation = 50.00;
+    let isBoostActive = false;
+    let boostValue = 5.00;
+
+    const form = document.getElementById("donationForm");
+    const fullNameInput = document.getElementById("fullName");
+    const cpfInput = document.getElementById("cpf");
+    const phoneInput = document.getElementById("phone");
+    const emailInput = document.getElementById("email");
+    const customAmountInput = document.getElementById("customAmount");
+    const presetButtons = document.querySelectorAll(".preset-btn");
+    const boostCheckbox = document.getElementById("boostCheckbox");
+    const boostRow = document.getElementById("boostRow");
+    const summaryDonation = document.getElementById("summaryDonation");
+    const summaryTotal = document.getElementById("summaryTotal");
+    const submitBtn = document.getElementById("submitBtn");
+    const btnText = document.getElementById("btnText");
+
+    // Modal
+    const pixModal = document.getElementById("pixModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    const modalQrCodeImg = document.getElementById("modalQrCodeImg");
+    const pixPayloadInput = document.getElementById("pixPayload");
+    const copyPixBtn = document.getElementById("copyPixBtn");
+    const copyText = document.getElementById("copyText");
+    const copySuccessMsg = document.getElementById("copySuccessMsg");
+    const modalTotalAmount = document.getElementById("modalTotalAmount");
+    const iPaidBtn = document.getElementById("iPaidBtn");
+
+    function formatCurrency(val) {
+      return val.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+    }
+
+    function updateTotals() {
+      const total = currentDonation + (isBoostActive ? boostValue : 0);
+      summaryDonation.textContent = formatCurrency(currentDonation);
+      boostRow.style.display = isBoostActive ? "flex" : "none";
+      summaryTotal.textContent = formatCurrency(total);
+      btnText.textContent = `Doar ${formatCurrency(total)} com Pix`;
+    }
+
+    // Máscaras
+    cpfInput.addEventListener("input", (e) => {
+      let val = e.target.value.replace(/\D/g, "");
+      val = val.replace(/(\d{3})(\d)/, "$1.$2");
+      val = val.replace(/(\d{3})(\d)/, "$1.$2");
+      val = val.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+      e.target.value = val.slice(0, 14);
+      document.getElementById("err-cpf").classList.remove("active");
+    });
+
+    phoneInput.addEventListener("input", (e) => {
+      let val = e.target.value.replace(/\D/g, "").slice(0, 11);
+      if (val.length <= 10) {
+        val = val.replace(/(\d{2})(\d)/, "($1) $2").replace(/(\d{4})(\d)/, "$1-$2");
+      } else {
+        val = val.replace(/(\d{2})(\d)/, "($1) $2").replace(/(\d{5})(\d)/, "$1-$2");
+      }
+      e.target.value = val;
+      document.getElementById("err-phone").classList.remove("active");
+    });
+
+    customAmountInput.addEventListener("input", (e) => {
+      let digits = e.target.value.replace(/\D/g, "");
+      if (!digits) digits = "0";
+      const num = (parseInt(digits, 10) / 100).toFixed(2);
+      const parts = num.split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      e.target.value = parts.join(",");
+
+      currentDonation = parseFloat(num);
+      presetButtons.forEach(b => {
+        b.classList.toggle("active", parseFloat(b.dataset.value) === currentDonation);
+      });
+      document.getElementById("err-customAmount").classList.remove("active");
+      updateTotals();
+    });
+
+    presetButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        presetButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const val = parseFloat(btn.dataset.value);
+        currentDonation = val;
+        customAmountInput.value = val.toFixed(2).replace(".", ",");
+        document.getElementById("err-customAmount").classList.remove("active");
+        updateTotals();
+      });
+    });
+
+    boostCheckbox.addEventListener("change", (e) => {
+      isBoostActive = e.target.checked;
+      updateTotals();
+    });
+
+    // Envio do formulário
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      let hasError = false;
+      const name = fullNameInput.value.trim();
+      const cpf = cpfInput.value.replace(/\D/g, "");
+      const phone = phoneInput.value.trim();
+      const email = emailInput.value.trim();
+
+      if (!name) {
+        document.getElementById("err-fullName").classList.add("active");
+        hasError = true;
+      } else {
+        document.getElementById("err-fullName").classList.remove("active");
+      }
+
+      if (cpf.length !== 11) {
+        document.getElementById("err-cpf").classList.add("active");
+        hasError = true;
+      } else {
+        document.getElementById("err-cpf").classList.remove("active");
+      }
+
+      if (!phone) {
+        document.getElementById("err-phone").classList.add("active");
+        hasError = true;
+      } else {
+        document.getElementById("err-phone").classList.remove("active");
+      }
+
+      if (!email || !email.includes("@")) {
+        document.getElementById("err-email").classList.add("active");
+        hasError = true;
+      } else {
+        document.getElementById("err-email").classList.remove("active");
+      }
+
+      if (currentDonation < 5.00) {
+        document.getElementById("err-customAmount").classList.add("active");
+        hasError = true;
+      } else {
+        document.getElementById("err-customAmount").classList.remove("active");
+      }
+
+      if (hasError) return;
+
+      const totalAmount = currentDonation + (isBoostActive ? boostValue : 0);
+
+      submitBtn.disabled = true;
+      btnText.textContent = "Gerando Pix...";
+
+      try {
+        const dadosDoador = {
+          nome: name,
+          cpf: cpf,
+          telefone: phone,
+          email: email,
+          valor: totalAmount,
+          descricao: "Doacao para tratamento da gatinha Phoebe"
+        };
+
+        const resultado = await chamarGatewayPix(dadosDoador);
+
+        if (resultado && resultado.copiaECola) {
+          modalTotalAmount.textContent = formatCurrency(totalAmount);
+          pixPayloadInput.value = resultado.copiaECola;
+          modalQrCodeImg.src = resultado.qrCodeImgUrl;
+          copySuccessMsg.style.display = "none";
+          copyText.textContent = "Copiar";
+
+          pixModal.style.display = "flex";
+        } else {
+          alert("Não foi possível gerar o código Pix pela MisticPay. Verifique os dados digitados e tente novamente.");
+        }
+      } catch (err) {
+        console.error("Erro na gateway MisticPay:", err);
+        alert("Ocorreu um erro ao conectar à MisticPay: " + (err.message || "Tente novamente."));
+      } finally {
+        submitBtn.disabled = false;
+        btnText.textContent = `Doar ${formatCurrency(totalAmount)} com Pix`;
+      }
+    });
+
+    // Copiar código Pix
+    copyPixBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(pixPayloadInput.value);
+        copyText.textContent = "Copiado!";
+        copySuccessMsg.style.display = "block";
+        setTimeout(() => { copyText.textContent = "Copiar"; }, 3000);
+      } catch (e) {
+        pixPayloadInput.select();
+        document.execCommand("copy");
+        copyText.textContent = "Copiado!";
+        copySuccessMsg.style.display = "block";
+      }
+    });
+
+    closeModalBtn.addEventListener("click", () => pixModal.style.display = "none");
+    pixModal.addEventListener("click", (e) => {
+      if (e.target === pixModal) pixModal.style.display = "none";
+    });
+
+    iPaidBtn.addEventListener("click", () => {
+      alert("Obrigado pelo seu apoio! Assim que o pagamento for compensado, o comprovante será processado.");
+      pixModal.style.display = "none";
+    });
+
+    // Compartilhar no WhatsApp
+    document.getElementById("shareWhatsappBtn")?.addEventListener("click", () => {
+      const text = encodeURIComponent(
+        "🚨 Pessoal, preciso da ajuda de vocês! Minha gatinha Phoebe, de 13 anos, teve crises convulsivas graves e precisa de uma Ressonância Magnética urgente (R$ 2.000). Criei uma vaquinha para custear o tratamento. Qualquer valor ajuda muito! Veja e contribua aqui: " + window.location.href
+      );
+      window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
+    });
+
+    updateTotals();
+  </script>
+</body>
+</html>
